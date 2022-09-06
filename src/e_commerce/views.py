@@ -10,3 +10,6 @@ def item_list(request):
 def order_list(request):
     context ={'orders':Order.objects.all()}
     return render(request,'order_list.html',context)
+
+def home(request):
+    return render(request,'home-page.html')
