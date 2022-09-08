@@ -1,7 +1,10 @@
+{% load static %}
+
 <h1>item_list</h1>
 {% for item in items %}
-title = {{ item.title }}<br>
+{{ item }}<br>
 price = {{ item.price }}<br>
+<img src="{{item.image.url}} " ><br>
 <br>
 {% endfor %}
 
