@@ -15,6 +15,7 @@ LABEL_CHOICES = (
 )
 
 
+
 class Item(models.Model):
     title = models.CharField(max_length=120)
     price = models.FloatField(default=0)
