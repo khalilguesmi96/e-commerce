@@ -12,7 +12,8 @@ def order_list(request):
     return render(request,'order_list.html',context)
 
 def home(request):
-    return render(request,'home-page.html')
+    context = {'items': Item.objects.all()}
+    return render(request,'home-page.html',context)
 
 def checkout(request):
     return render(request,'checkout-page.html')
