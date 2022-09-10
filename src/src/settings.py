@@ -135,15 +135,12 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-'''AUTHENTICATION_BACKENDS = [
-
-    # Needed to login by username in Django admin, regardless of `allauth`
+AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
-
-    # `allauth` specific authentication methods, such as login by e-mail
-    'allauth.account.auth_backends.AuthenticationBackend',
-
-]'''
+    'allauth.account.auth_backends.AuthenticationBackend'
+)
+SITE_ID = 1
+LOGIN_REDIRECT_URL = '/'
 
 STATIC_URL = 'static/'
 
@@ -160,9 +157,3 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
-AUTHENTICATION_BACKENDS = (
-    'django.contrib.auth.backends.ModelBackend',
-    'allauth.account.auth_backends.AuthenticationBackend'
-)
-SITE_ID = 1
-LOGIN_REDIRECT_URL = '/'
