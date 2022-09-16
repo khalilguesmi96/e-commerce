@@ -5,15 +5,13 @@ CATEGORY_CHOICES = (
     ('S','Shirt'),
     ('SW','Sport Wear'),
     ('OW','Outwear'),
-('PH','Phone'),
-('PC','Pc'),
-
+    ('PH','Phone'),
+    ('PC','Pc'),
 )
 LABEL_CHOICES = (
     ('P','primary'),
     ('S','secondary'),
     ('D','danger'),
-
 )
 
 
